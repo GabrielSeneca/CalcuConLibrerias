@@ -11,17 +11,13 @@ namespace CalcuconLibrerias
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("El resultado es:");
-            Console.WriteLine(CCalculos.Suma(10, 5));
-            //double r = 0;
 
-            //r = CCalculos.Suma(2, 2);
-            //Console.WriteLine(r);
+            Console.WriteLine("El resultado es: " + (CCalculos.Suma(10, 5)));
+
         }
-
         public static string Test()
         {
-            return "prueba test";
+            return ("prueba test");
         }
     }
 }
