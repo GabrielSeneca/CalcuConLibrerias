@@ -20,8 +20,8 @@ namespace CalcuTest
         {
 
             //Arrange
-            double a = 10;
-            double b = 5;
+            //double a = 10;
+            //double b = 5;
             double expected = 50;
             
             //Act
@@ -33,16 +33,26 @@ namespace CalcuTest
 
         [DataRow(50, 10, 5)]
         [TestMethod]
-        public void Div_shouldcalcAndReturnSameValue(double a, double b, double expected)
+        public void Div_ShouldCalcAndReturnSameValue(double a, double b, double expected)
         {
 
             //arrange
 
             //act
-            double actual = CalcuconLibrerias.Program.Div();
+            double result = CalcuconLibrerias.Program.Div();
 
             //assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, result);
+        }
+
+        [DataRow(100,0)]
+        [TestMethod]
+        [ExpectedException(typeof(DivideByZeroException))]
+        public void test_Exception()
+        {
+            //double a = 100;
+            //double b = 0;
+            double result = CalcuconLibrerias.Program.Div();
         }
     }
 }
