@@ -15,5 +15,14 @@ namespace CalcuTest
             string result2 = CalcuconLibrerias.Program.Multi();
             Assert.AreEqual("50", result2);
         }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+           
+            string result2 = CalcuconLibrerias.Program.Multi();
+            Assert.AreEqual("50", result2);
+        }
+
     }
 }
