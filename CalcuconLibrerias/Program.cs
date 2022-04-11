@@ -12,7 +12,7 @@ namespace CalcuconLibrerias
         static void Main(string[] args)
         {
 
-            Console.WriteLine("El resultado es: " + (CCalculos.Suma(10, 5)) + ", " + (CCalculos.Multi(10, 5)));
+            Console.WriteLine("El resultado es: " + (CCalculos.Suma(10, 5)));
 
         }
         public static string Suma()
@@ -20,9 +20,18 @@ namespace CalcuconLibrerias
             return "15";
         }
 
-        public static string Multi()
+        public static double Multi()
         {
-            return "50";
+            double result = 5*10;
+            return result;
         }
+
+        public static double Div()
+        {
+            double result = 50 / 10;
+            return result;
+        }
+
+
     }
 }

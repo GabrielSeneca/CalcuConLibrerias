@@ -60,6 +60,10 @@
       <Project>{d709a02c-d2f5-410d-85e1-beace94561b0}</Project>
       <Name>CalcuconLibrerias</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Calculos2\Calculos.csproj">
+      <Project>{1b4ca5b4-ab14-449d-89e9-8e9d71a5f5ea}</Project>
+      <Name>Calculos</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

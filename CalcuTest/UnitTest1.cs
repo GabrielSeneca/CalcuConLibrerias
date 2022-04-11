@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using Calculos;
 
 namespace CalcuTest
 {
@@ -7,22 +8,44 @@ namespace CalcuTest
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Suma_ShouldCalcAndReturnSameValue()
         {
             string result = CalcuconLibrerias.Program.Suma();
             Assert.AreEqual("15", result);
 
-            string result2 = CalcuconLibrerias.Program.Multi();
-            Assert.AreEqual("50", result2);
         }
 
         [TestMethod]
-        public void TestMethod2()
+        public void Multi_ShouldCalcAndReturnSameValue()
         {
-           
-            string result2 = CalcuconLibrerias.Program.Multi();
-            Assert.AreEqual("50", result2);
+
+            //string result2 = CalcuconLibrerias.Program.Multi();
+            // Assert.AreEqual("50", result2);
+
+            //Arrange
+            double a = 10;
+            double b = 5;
+            double expected = 50;
+            
+            //Act
+            double result = CalcuconLibrerias.Program.Multi();
+
+            //Assert
+            Assert.AreEqual(expected, result);
         }
 
+        [DataRow(50, 10, 5)]
+        [TestMethod]
+        public void multi_shouldcalcandreturnsamevalue2(double a, double b, double expected)
+        {
+
+            //arrange
+
+            //act
+            double actual = CalcuconLibrerias.Program.Div();
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
