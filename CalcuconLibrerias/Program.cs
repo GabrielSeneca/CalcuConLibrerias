@@ -12,12 +12,17 @@ namespace CalcuconLibrerias
         static void Main(string[] args)
         {
 
-            Console.WriteLine("El resultado es: " + (CCalculos.Suma(10, 5)));
+            Console.WriteLine("El resultado es: " + (CCalculos.Suma(10, 5)) + ", " + (CCalculos.Multi(10, 5)));
 
         }
-        public static string Test()
+        public static string Suma()
         {
-            return ("prueba test");
+            return "15";
+        }
+
+        public static string Multi()
+        {
+            return "50";
         }
     }
 }

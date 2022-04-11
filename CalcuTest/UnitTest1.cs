@@ -9,8 +9,11 @@ namespace CalcuTest
         [TestMethod]
         public void TestMethod1()
         {
-            string result = CalcuconLibrerias.Program.Test();
-            Assert.AreEqual("prueba test", result);
+            string result = CalcuconLibrerias.Program.Suma();
+            Assert.AreEqual("15", result);
+
+            string result2 = CalcuconLibrerias.Program.Multi();
+            Assert.AreEqual("50", result2);
         }
     }
 }
