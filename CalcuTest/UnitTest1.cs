@@ -36,7 +36,7 @@ namespace CalcuTest
 
         [DataRow(50, 10, 5)]
         [TestMethod]
-        public void div_shouldcalcandreturnsamevalue(double a, double b, double expected)
+        public void Div_shouldcalcandreturnsamevalue(double a, double b, double expected)
         {
 
             //arrange
