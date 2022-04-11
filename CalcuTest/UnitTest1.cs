@@ -19,9 +19,6 @@ namespace CalcuTest
         public void Multi_ShouldCalcAndReturnSameValue()
         {
 
-            //string result2 = CalcuconLibrerias.Program.Multi();
-            // Assert.AreEqual("50", result2);
-
             //Arrange
             double a = 10;
             double b = 5;
